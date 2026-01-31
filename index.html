@@ -1,17 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>Pagina de Pruebas</title>
+  <meta charset="utf-8" />
+  <title>Pagina de Pruebas</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2rem; }
+    .titulo-principal { color: #222; }
+    .link-ejemplo { color: #0a58ca; }
+    table { border-collapse: collapse; margin-top: 1rem; }
+    td, th { border: 1px solid #ccc; padding: 6px 10px; }
+  </style>
 </head>
 <body>
-    <h1 class="titulo-principal">Bienvenido a PaginaPruebas</h1>
-    <p>Esta página será usada para pruebas Selenium con unittest.</p>
+  <h1 class="titulo-principal">Bienvenido a PaginaPruebas</h1>
+  <p>Esta página será usada para pruebas Selenium con unittest.</p>
 
+  <nav>
     <a id="link-google" href="https://google.com" target="_blank">Ir a Google</a>
-    <br>
-    <a class="link-ejemplo" href="#" id="link-ejemplo">Link de ejemplo</a>
+    <br />
+    <a class="link-ejemplo" href="#ejemplo">Link de ejemplo</a>
+  </nav>
 
-    <input type="text" id="input-prueba" placeholder="Escribe algo aquí...">
+  <section style="margin-top: 1rem;">
+    
+    <input type="text" id="input-prueba" placeholder="Escribe algo aquí..." />
+  </section>
+
+  <section>
+    <h2>Tabla de ejemplo</h2>
+    
+    <table id="tabla-ejemplo">
+      <thead>
+        <tr><th>#</th><th>Nombre</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Item A</td></tr>
+        <tr><td>2</td><td>Item B</td></tr>
+        <tr><td>3</td><td>Item C</td></tr>
+      </tbody>
+    </table>
+  </section>
 </body>
 </html>
